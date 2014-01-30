@@ -38,11 +38,6 @@ try
 
     //$fff = new Components\ModuleBase();
     echo $application->handle()->getContent();
-
-    echo"<br clear='all'><div style='background:#eee '>";
-    echo "Пиковое значение объема памяти: ".round(memory_get_peak_usage()/(1024*1024),2)."MB";
-    echo "<br>Количество памяти выделенно: ".round(memory_get_usage()/(1024*1024),2)."MB";
-    echo"</div>";
 }
 catch (\Exception $e)
 {

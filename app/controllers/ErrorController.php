@@ -9,6 +9,6 @@ class ErrorController extends \Components\ControllerBase
     {
         $this->response->setHeader(404, 'Not Found');
         $this->view->classBody="error";
-        $this->view->pick('errors/404');
+        $this->view->partial('error/404');
     }
 }
